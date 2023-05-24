@@ -1,10 +1,15 @@
 <template>
-<h2>hellow world</h2>
+<!-- <h2>hellow world</h2> -->
+
+<main-tab-bar/>
+<router-view/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import store from './store'
+import MainTabBar from './components/content/mainTabbar/MainTabBar'
+
 import {
   INCREMENT
 } from './store/mutations-types'
@@ -12,7 +17,8 @@ import {
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    MainTabBar
   },
   data(){
     return {
